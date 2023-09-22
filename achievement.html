@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resume - Achievement</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 0px;
+      color: #fff;
+      background: linear-gradient(57deg, #deeae6, #2196F3);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .achievement-info h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .achievement-info ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .achievement-info ul li {
+      margin-bottom: 10px;
+      color: black;
+      display: flex;
+      align-items: center;
+    }
+
+    .achievement-info ul li:before {
+      content: "•"; /* Add bullet point before each list item */
+      color: #2196F3;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .achievement-info ul li span {
+      color: #666;
+      font-size: 20px;
+    }
+
+    .achievement-info ul li strong {
+      font-weight: bold;
+    }
+
+    .image {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .image img {
+      max-width: 400px; /* Adjust the size of the image as needed */
+      max-height: 200px;
+      display: block;
+    }
+
+    .achievement-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .achievement-info h1 {
+      margin-bottom: 40px;
+    }
+
+    .achievement-info ul {
+      font-size: 20px;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      color:black;
+    }
+    .image {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.image-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image:hover .image-description {
+  opacity: 1;
+}
+
+.image-description p {
+  font-size: 60px;
+  margin: 0;
+  padding: 10px;
+  color:black;
+  font-weight:bold;
+  color: red;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Resume</h1>
+    <p>Welcome to my online resume!</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="qualification.html">Qualification</a>
+    <a href="achievement.html">Achievement</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section id="achievement">
+      <div class="container">
+        <h1>Achievement</h1>
+        <div class="achievement-info">
+          <!--<h2>Professional Recognition</h2>-->
+          <div class="image image1">
+            <img src="hockeyy.jpg" alt="Achievement Image" >
+            <div class="image-description">
+              <p>Runners-up in VTU State Level Women Hockey Tournament</p>
+            </div>
+          </div>
+          <div class="image image1">
+            <img src="arc.jpg" alt="Achievement Image" >
+            <div class="image-description">
+              <p>Winners in Nitte Healthcare Innovation Hackathon 2023</p>
+            </div>
+          </div>
+          
+          
+        <!--  <div class="image">
+            <img src="hockeyy.jpg" alt="Achievement Image">
+          </div>
+          <div class="box">
+            <strong>Secured Runners-up in VTU State Level Hockey Women Tournament</strong>
+          </div>
+          <div class="box">
+            <span>Received 'Best Student Award' in the year 2017-2018</span>
+          </div>-->
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resume - Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 0px;
+      color: #fff;
+      background: linear-gradient(57deg, #deeae6, #2196F3);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .photo {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+    }
+
+    .photo img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .photo:hover img {
+      transform: scale(1.1);
+    }
+
+    .photo-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .photo:hover .photo-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Resume</h1>
+    <p>Welcome to my online resume!</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="qualification.html">Qualification</a>
+    <a href="achievement.html">Achievement</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section id="gallery">
+      <div class="container">
+        <h1>Photo Gallery</h1>
+        <div class="photo-gallery">
+          <div class="photo">
+            <img src="img1.jpg" alt="Image 1">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="photo">
+            <img src="img2.jpg" alt="Image 2">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="photo">
+            <img src="img4.jpg" alt="Image 3">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="photo">
+            <img src="img3.jpg" alt="Image 4">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="photo">
+            <img src="img5.jpg" alt="Image 5">
+            <div class="photo-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
